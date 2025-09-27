@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 // Get the base URL from the environment variable for flexibility
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+const API_URL = 'https://survey-app-updated-backend.onrender.com' || 'http://localhost:5001';
 
 const API = axios.create({
   baseURL: `${API_URL}/api`,

@@ -8,7 +8,7 @@ import CategoryFilter from '../components/CategoryFilter';
 import ExpiredSurveys from '../components/ExpiredSurveys';
 import io from 'socket.io-client';
 
-const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5001';
+const SOCKET_URL = 'https://survey-app-updated-backend.onrender.com' || 'http://localhost:5001';
 const socket = io(SOCKET_URL);
 const surveyCategories = ['All', 'Technology', 'Lifestyle', 'Entertainment', 'General', 'Politics'];
 
